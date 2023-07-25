@@ -151,9 +151,12 @@
   }
 
 /* BUTTON */
-.button-draw-mandala {
+.button-space {
+  width: 100%;
   display: flex;
-  justify-self: center;
+  justify-content: center;
+ }
+.button-draw-mandala {
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -224,11 +227,14 @@
 </head>
 
 <body>
-  <a href="/emancipation/mandala/draw">
+ <div class="button-space"> 
+   <a href="/emancipation/mandala/draw">
    <button class="button-draw-mandala" role="button">
     DRAW MANDALA
    </button>
   </a>
+ </div>
+
  
   <span class="large-circles">
     <div class="large circle one"></div>
