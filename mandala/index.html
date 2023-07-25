@@ -150,9 +150,9 @@
     border-bottom: 2em;
   }
 
-/*   */
-/* CSS */
-.button-85 {
+/* BUTTON */
+.button-draw-mandala {
+  margin-inline: 100px;
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -167,7 +167,7 @@
   touch-action: manipulation;
 }
 
-.button-85:before {
+.button-draw-mandala:before {
   content: "";
   background: linear-gradient(
     45deg,
@@ -190,12 +190,12 @@
   -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
+  animation: glowing-button-draw-mandala 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
-@keyframes glowing-button-85 {
+@keyframes glowing-button-draw-mandala {
   0% {
     background-position: 0 0;
   }
@@ -207,7 +207,7 @@
   }
 }
 
-.button-85:after {
+.button-draw-mandala:after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -223,7 +223,12 @@
 </head>
 
 <body>
-<button class="button-85" role="button">DRAW MANDALA</button>
+  <a href="/emancipation/mandala/draw">
+   <button class="button-draw-mandala" role="button">
+    DRAW MANDALA
+   </button>
+  </a>
+ 
   <span class="large-circles">
     <div class="large circle one"></div>
     <div class="large circle two"></div>
